@@ -1,8 +1,8 @@
 #include "hw/getname.h"
 
-static std::string	names[] = {"Mila", "Kika", "Petrucho"};
+static int	names[] = {3, 0, 4};
 
-const std::string GetName(int index)
+const int GetName(int index)
 {
 	return names[index];
 }

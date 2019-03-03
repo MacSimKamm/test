@@ -3,6 +3,6 @@
 
 #include <string>
 
-const std::string GetName(int index);
+const int GetName(int index);
 
 #endif
