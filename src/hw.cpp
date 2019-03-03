@@ -1,8 +1,19 @@
+#include <iostream>
+#include <cstdlib>
 #include "hw/getname.h"
 
-static std::string	names[] = {"Mila", "Kika", "Petrucho"};
-
-const std::string GetName(int index)
+int main(int argc, char **argv)
 {
-	return names[index];
+	if (argc <= 1)
+	{
+		
+		std::cerr << "Нужно указать индекс имени " <<std::endl;
+		return 1;
+	}
+
+	int i = std::atoi(argv[1]);
+
+    std::cout << "Hello, " << GetName(i) << "!" << std::endl;
+
+    return 0;
 }
