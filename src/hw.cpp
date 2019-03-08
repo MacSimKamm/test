@@ -2,19 +2,19 @@
 #include <cstdlib>
 #include "hw/getname.h"
 
-int main(int argc, char **argv)
+/*Нет сообщения об ошибке после запуска программы в отладчике.
+
+
+int main()
 {
-	if (argc <= 1)
-	{
+
+	int *p;
+	
+	while (true) {
 		
-		std::cerr << "Нужно указать индекс числа" <<std::endl;
-		return 1;
+		p = new int;
 	}
 
-	int i =atoi(argv[1]);
-	int j =GetName(i);
-
-    std::cout << "Целая часть от деления 10 / " << j << " = " << 10/j <<std::endl;
 
     return 0;
 }
