@@ -3,6 +3,6 @@
 
 #include <string>
 
-const int GetName(int index);
+const int GetName(int arr[], int n);
 
 #endif

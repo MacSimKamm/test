@@ -1,8 +1,17 @@
 #include "hw/getname.h"
 
-static int	names[] = {3, 0, 4};
+static int	names[] = {3, 2, 4};
 
-const int GetName(int index)
+const int GetName(int arr[], int n)
 {
-	return names[index];
+	int k = n;
+	
+	int mas[k];
+
+	for (int i=0; i<k; i++) 
+		mas[i] = i;
+
+	GetName(mas, k);
+
+	return names[1];
 }
